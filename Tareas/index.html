@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+
+        <div class="fila-formulario">
+            <input type="text" id="input-tarea" class="campo-texto" placeholder="Escribe aquí tu tarea...">
+            
+            <select id="select-estado" class="campo-seleccion">
+                <option value="pendiente">Pendiente</option>
+                <option value="proceso">En Proceso</option>
+                <option value="finalizado">Finalizado</option>
+            </select>
+        </div>
+
+        <div class="fila-boton">
+            <button id="btn-agregar" class="boton-agregar">Agregar</button>
+        </div>
+
+        <div id="lista-tareas" class="contenedor-tareas">
+            
+            <div class="tarjeta proceso">
+                Estudiar JS
+            </div>
+
+            <div class="tarjeta pendiente">
+                Estudiar DOM
+            </div>
+
+            <div class="tarjeta finalizado">
+                Dar clase a la 651
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

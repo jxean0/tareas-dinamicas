@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-principal {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.fila-formulario {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 450px;
+    justify-content: center;
+}
+
+.campo-texto {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-color: #000000;
+    font-size: 16px;
+}
+
+.campo-seleccion {
+    padding: 10px;
+    border-bottom: 2px solid #32cd32;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+
+.fila-boton {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.boton-agregar {
+    background-color: #66ff66;
+    color: #333;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-agregar:hover {
+    background-color: #52cc52;
+}
+
+.contenedor-tareas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+    width: 100%;
+}
+
+.tarjeta {
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box; 
+    flex: 0 0 auto;
+    min-width: 120px;
+    max-width: 200px;
+    overflow-wrap: break-word; 
+}
+
+.pendiente {
+    background-color: #ffffcc;
+    border: 1px solid #ffd700;
+    color: #333;
+}
+
+.proceso {
+    background-color: #add8e6;
+    border: 1px solid #87ceeb;
+    color: #000;
+}
+
+.finalizado {
+    background-color: #90ee90;
+    border: 1px solid #32cd32;
+    color: #000;
+}
